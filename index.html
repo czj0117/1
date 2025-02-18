@@ -12,13 +12,18 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        header {
-            background: #50b3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #38a593 3px solid;
-        }
+     header {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 半透明遮罩层 */
+                    url('images/header-bg.jpg') center/cover no-repeat; /* 背景图片路径 */
+        color: white;
+        padding-top: 30px;
+        min-height: 400px; /* 增加高度以显示图片 */
+        border-bottom: #38a593 3px solid;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
         header a {
             color: #ffffff;
             text-decoration: none;
