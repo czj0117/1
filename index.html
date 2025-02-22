@@ -12,18 +12,18 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-     header {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 半透明遮罩层 */
-                    url('images/header-bg.jpg') center/cover no-repeat; /* 背景图片路径 */
-        color: white;
-        padding-top: 30px;
-        min-height: 400px; /* 增加高度以显示图片 */
-        border-bottom: #38a593 3px solid;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
+        header {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 半透明遮罩层 */
+                        url('images/header-bg.jpg') center/cover no-repeat; /* 背景图片路径 */
+            color: white;
+            padding-top: 30px;
+            min-height: 400px; /* 增加高度以显示图片 */
+            border-bottom: #38a593 3px solid;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
         header a {
             color: #ffffff;
             text-decoration: none;
@@ -40,7 +40,7 @@
         }
         header nav {
             float: right;
-            margin-top: 10px;
+            margin-top: 100px; /* 调整为向下移动 */
         }
         header .highlight, header .current a {
             color: #e8491d;
@@ -70,24 +70,8 @@
             height: auto;
             border-radius: 8px;
         }
-        .team-member {
+        #branding h1 {
             text-align: center;
-            margin-bottom: 20px;
-        }
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .video-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .video-container video {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
         }
     </style>
 </head>
@@ -101,7 +85,6 @@
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#team">Team</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -112,11 +95,13 @@
         <section class="section" id="home">
             <h2>Welcome to Mood Garden</h2>
             <p>Your mental health is important to us. Discover how plants and technology can help you manage your emotions.</p>
-            <div class="video-container">
-                <video controls>
-                   <source src="videos/intro.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/image1.jpg" alt="Image 1">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/image2.jpg" alt="Image 2">
+                </div>
             </div>
         </section>
         <section class="section" id="about">
@@ -124,29 +109,6 @@
             <p>Mood Garden is a project aimed at improving mental health through plant therapy and technology. In today's fast-paced world, many people face increasing psychological pressure and emotional challenges. Mood Garden provides a unique solution by combining the natural healing power of plants with modern technology.</p>
             <p>Our project is inspired by the growing awareness of mental health issues and the need for innovative solutions. By using plants as a medium, we aim to create a calming and therapeutic environment that helps users manage their emotions effectively.</p>
         </section>
-   <section class="section" id="team">
-    <h2>Our Team</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="team-member">
-                <h3>杨晓婷</h3>
-                <p>Chief Executive Officer</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="team-member">
-                <h3>陈子杰</h3>
-                <p>Chief Technology Officer</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="team-member">
-                <h3>胡荟灵</h3>
-                <p>Chief Operating Officer</p>
-            </div>
-        </div>
-    </div>
-</section>
         <section class="section" id="services">
             <h2>Our Services</h2>
             <p>Mood Garden offers a range of services designed to support your emotional well-being. Our services include:</p>
