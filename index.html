@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+本项目致力于填补情绪疗愈领域的空白，推出这款小程序，为用户提供一个专属的情绪关怀与治愈路径，有以下核心功能和服务：  我想把这句话居中<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -10,15 +10,16 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            font-size: 18px;
-            line-height: 1.8;
+            font-size: 18px; /* 增大文字大小 */
+            line-height: 1.8; /* 增加行间距 */
         }
         header {
             font-family: Arial, sans-serif;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-bg.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 半透明遮罩层 */
+                        url('images/header-bg.jpg') center/cover no-repeat; /* 背景图片路径 */
             color: white;
             padding-top: 30px;
-            min-height: 400px;
+            min-height: 400px; /* 增加高度以显示图片 */
             border-bottom: #38a593 3px solid;
             position: relative;
             display: flex;
@@ -27,8 +28,8 @@
         header a {
             color: #ffffff;
             text-decoration: none;
-            text:-transform uppercase;
-            font-size: 18px;
+            text-transform: uppercase;
+            font-size: 18px; /* 增大文字大小 */
         }
         header ul {
             padding: 0;
@@ -40,7 +41,7 @@
         }
         header nav {
             float: right;
-            margin-top: 100px;
+            margin-top: 100px; /* 调整为向下移动 */
         }
         header .highlight, header .current a {
             color: #e8491d;
@@ -61,13 +62,13 @@
         .section h2 {
             text-align: center;
             color: #333;
-            font-size: 24px;
+            font-size: 24px; /* 增大标题文字大小 */
         }
         .section p {
-            line-height: 1.8;
+            line-height: 1.8; /* 增加段落行间距 */
         }
         ul {
-            line-height: 1.8;
+            line-height: 1.8; /* 增加列表项行间距 */
         }
         .section img {
             max-width: 100%;
@@ -76,15 +77,15 @@
         }
         #branding h1 {
             text-align: center;
-            font-size: 28px;
+            font-size: 28px; /* 增大标题文字大小 */
         }
         /* 视频封面样式 */
         .video-container {
             position: relative;
-            width: 700px;
-            max-width: 100%;
+            width: 700px; /* 增大视频容器宽度 */
+            max-width: 100%; /* 确保在小屏幕上不会超出容器宽度 */
             overflow: hidden;
-            margin: 0 auto;
+            margin: 0 auto; /* 居中对齐 */
         }
         .video-cover {
             position: absolute;
@@ -104,11 +105,7 @@
             width: 100%;
             height: auto;
             display: block;
-            aspect-ratio: 16/9;
-        }
-        /* 新增的样式：居中显示文字 */
-        .center-text {
-            text-align: center;
+            aspect-ratio: 16/9; /* 保持视频宽高比 */
         }
     </style>
 </head>
@@ -131,10 +128,11 @@
     <div class="container">
         <section class="section" id="home">
             <h2>欢迎来到植愈纪元</h2>
-            <p class="center-text">本项目致力于填补情绪疗愈领域的空白，推出这款小程序，为用户提供了一个专属的情绪关怀与治愈路径，有以下核心功能和服务：</p>
+            <p>      本项目致力于填补情绪疗愈领域的空白，推出这款小程序，为用户提供一个专属的情绪关怀与治愈路径，有以下核心功能和服务：</p>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="video-container">                  
+                    <div class="video-container">
+                        <img src="images/video-cover.jpg" alt="视频封面" class="video-cover" id="videoCover">
                         <video id="introVideo" controls>
                             <source src="videos/intro1.mp4" type="video/mp4">
                             您的浏览器不支持视频标签。
@@ -150,7 +148,7 @@
                 <li>1. 情绪记录与分析：用户可以随时记录心情，小程序通过数据分析功能对情绪数据进行深度剖析，生成情绪变化曲线和深度报告。</li>
                 <li>2. 虚拟植物互动：以情绪种子为核心，用户的情绪状态会影响虚拟种子的生长和变化。种子根据用户心境汲取“养分”，触发关怀语录，传递治愈力量。</li>
                 <li>3. 个性化疗愈方案：根据用户的情绪状况，小程序推荐个性化的疗愈方案。为抑郁症患者融入特定植物（如圣约翰草）设定，帮助缓解抑郁情绪。</li>
-                <li>4. 实物与情绪园林：用户可将虚拟植物兑换实物积木，线下去合作机构打造的情绪园林体验。园林中植物精选，与音乐配合，沉浸式疗愈。</li>
+                <li>4. 实物与情绪园林：用户可将虚拟植物兑换实物积木，线下去合作机构打造的情绪园林体验。园林中精选植物，与音乐配合，沉浸式疗愈。</li>
                 <li>5. 社交互动功能：小程序内设有社交区，邀请专家在线直播科普心理健康知识，用户可交流康复心得，形成温暖的共愈氛围。</li>
                 <li>6. 安全与隐私保护：全程严守法规，保护用户的情绪数据和个人隐私。</li>
             </ul>
